@@ -5,28 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
-	<title>Торсион</title>
+	<title>Wecheap - Аренда складов</title>
 </head>
 <body>
-	<header class="page-header container">
-		<img class="page-header__logo" src="img/logotype/logo.svg" width="90" height="108" alt="Логотип - Торсион">
-		<p class="page-header__marks">
-			<img class="page-header__mark-img--1" src="img/mark-1.png" width="204" height="204" alt="Логотип TORQUE">
-			<img class="page-header__mark-img--2" src="img/mark-2.png" width="234" height="135" alt="Логотип PK TOP">
-		</p>
+	<header class="page-header">
+		<div class="container">
+			<div class="page-header__top-line">
+				<a class="page-header__logo">
+					<img width="106" height="26.63" src="img/logotype/logo.svg" alt="Логотип Wecheap">
+				</a>
+				<a class="page-header__phone" href="tel:+79819338141">8 <span>(981)</span> 933 81 41</a>
+			</div>
+		</div>
 	</header>
 
 	<main class="page-main container">
-		<img class="page-main__img" src="img/bg.png" width="1068" height="712" alt="Автозапчасти PK TOP и TORQUE оптом">
-		<h1 class="page-main__title">Автозапчасти «РК TOP» и TORQUE <span>оптом</span></h1>
-		<p class="page-main__descr">В наличии <span>более 1 500 наименований</span> для самых популярных автомобилей России и СНГ</p>
-		<ul class="page-main__list">
-			<li class="page-main__benefits">Доставка по всей России</li>
-			<li class="page-main__benefits">Гарантия 1 год</li>
+		<h1 class="page-main__title">Аренда <span>склада контейнера</span> в Санкт-Петербурге</h1>
+		<ul class="page-main__options">
+			<li class="page-main__item page-main__item--24-7">Охраняемая территория</li>
+			<li class="page-main__item page-main__item--camera">Видеодоступ к контейнерам</li>
+			<li class="page-main__item page-main__item--light">Электричество и свет</li>
+			<li class="page-main__item page-main__item--box">Герметичные контейнеры</li>
 		</ul>
-		<b class="page-main__offer">Получи прайс-лист с полным ассортиментом себе в мессенджер</b>
-		<a class="page-main__btn" href="https://wa.me/79523537065?text=Хочу%20получить%20прайс-лист"><img src="img/whatsapp.svg" width="18" alt="иконка whatsapp"> Получить прайс-лист</a>
+		<p class="page-main__offer">Введите номер телефона и забронируйте свой контейнер</p>
+		<form class="page-main__form" action="send.php" method="POST">
+			<input class="page-main__form-phone" name="form-phone" type="phone" placeholder="Ваш номер телефона">
+			<button class="page-main__form-btn" type="submit">Жду звонка</button>
+		</form>
 	</main>
-	<script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/maskedinput/jquery.maskedinput.js"></script>
+	<script src="js/scripts.min.js"></script>
 </body>
 </html>
